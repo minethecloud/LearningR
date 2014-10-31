@@ -70,30 +70,31 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="help-commands" class="section level3">
 <h3><a name="help"></a>Help Commands</h3>
 <p><strong>Find out more about a function</strong></p>
-<pre class="{r}"><code>[SYN] ?functionName or help(functionName)
+<pre class="{r,echo=false}"><code> functionName or help(functionName)
 
-[EX] ?rnorm or help(rnorm)
+?rnorm  
+help(rnorm)
 </code></pre>
 <p><strong>Learn about the different ways to use a function</strong></p>
-<pre class="{r}"><code>[SYN] example(functionName)
+<pre class="{r,echo=false}"><code>example(functionName)
 
-[EX] example(rnorm) </code></pre>
+example(rnorm) </code></pre>
 <p><strong>Display the arguments of a function</strong></p>
-<pre class="{r}"><code>[SYN] args(functionName)
+<pre class="{r,echo=false}"><code>args(functionName)
 
-[EX] args(rnorm)
+args(rnorm)
 </code></pre>
 <p><strong>Search through R’s help documentation for a specific term</strong></p>
-<pre class="{r}"><code>[SYN] help.search(&quot;your search term&quot;)
+<pre class="{r,echo=false}"><code>help.search(&quot;your search term&quot;)
 
-[Ex] ?rnorm  or help(rnorm)</code></pre>
+?rnorm or help(rnorm)</code></pre>
 </div>
 <div id="package-commands" class="section level3">
 <h3><a name="package"></a> Package Commands</h3>
 <p><strong>Install a Package</strong></p>
-<pre class="{r}"><code>[SYN] install.packages(&quot;package name&quot;)
+<pre class="{r,echo=false}"><code>#install.packages(&quot;package name&quot;)
 
-[EX] install.packages('rnorm')</code></pre>
+#install.packages('rnorm')</code></pre>
 <p><strong>Find installed packages</strong></p>
 <pre class="{r}"><code>   installed.packages()</code></pre>
 </div>
@@ -102,9 +103,14 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p><strong>Find the Class of a variable</strong></p>
 <pre class="{r}"><code>x &lt;- 3
 class(x)
+[1] &quot;numeric&quot;</code></pre>
+<p><strong>Checking and Changing Classes</strong></p>
+<pre class="{r}"><code>is.character(&quot;red,yellow&quot;)
+is.logical(TRUE)
+is.numeric(3)
 </code></pre>
-<p>assign()</p>
-<p>Generating regular sequences 2*1:15 seq() rep() paste()</p>
+<p><strong>View complete list of is functions</strong></p>
+<pre class="{r}"><code>ls(pattern=&quot;^is&quot;,baseenv())</code></pre>
 </div>
 <div id="moving-around-commands" class="section level3">
 <h3><a name="moving"></a> Moving Around Commands</h3>

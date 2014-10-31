@@ -18,7 +18,7 @@ http://www.personality-project.org/R/r.commands.html
 **Find out more about a function**
 
 ```{r,echo=FALSE}
- functionName or help(functionName)
+# functionName or help(functionName)
 
 ?rnorm  
 help(rnorm)
@@ -28,15 +28,15 @@ help(rnorm)
 **Learn about the different ways to use a function**
 
 ```{r,echo=FALSE}
-example(functionName)
+#example(functionName)
 
-example(rnorm) 
+#example(rnorm) 
 ```
 
 **Display the arguments of a function**
 
 ```{r,echo=FALSE}
-args(functionName)
+#args(functionName)
 
 args(rnorm)
 
@@ -44,9 +44,10 @@ args(rnorm)
 
 **Search through R's help documentation for a specific term**
 ```{r,echo=FALSE}
-help.search("your search term")
+#help.search("your search term")
 
-?rnorm or help(rnorm)
+?rnorm
+help(rnorm)
 ```
 
 ### <a name="package"></a> Package Commands
@@ -70,21 +71,12 @@ help.search("your search term")
 ```{r}
 x <- 3
 class(x)
-[1] "numeric"
-```
-
-**Checking and Changing Classes**
-```{r}
-is.character("red,yellow")
-is.logical(TRUE)
-is.numeric(3)
 
 ```
 
-**View complete list of is functions**
-```{r}
-ls(pattern="^is",baseenv())
-```
+
+
+
 
 ### <a name="moving"></a> Moving Around Commands
 ### <a name="data"></a> Data Manipulation Commands
