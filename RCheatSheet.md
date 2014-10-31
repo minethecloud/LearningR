@@ -5,15 +5,13 @@ http://www.personality-project.org/R/r.commands.html
 
 -  [Help Commands](#help)
 -  [Package Commands](#package)
--  [Input and Display](#input)
+-  [Inspecting Variables](#input)
 -  [Moving Around ](#moving)
 -  [Data Manipulation](#data)
 -  [Statistics and transformations](#statistics)
 -  [Graphics](#graphics)
 
-Syntax :``` ```
 
-Example:``` ```
 
 ### <a name="help"></a>Help Commands 
 
@@ -25,42 +23,57 @@ Example:``` ```
 [EX] ?rnorm or help(rnorm)
 
 ```
-             
-	
 
-**If you already know what a function does and just want to see formats for using it properly, you can type:**
+**Learn about the different ways to use a function**
 
-Syntax :```example(functionName) ```
+```{r}
+[SYN] example(functionName)
 
-Example:```example(rnorm) ```
-                
-	
+[EX] example(rnorm) 
+```
 
 **Display the arguments of a function**
-	
-Syntax :```args(functionName) ```
 
-Example:```args(rnorm) ```              
-	
+```{r}
+[SYN] args(functionName)
+
+[EX] args(rnorm)
+
+```              
 
 **Search through R's help documentation for a specific term**
+```{r}
+[SYN] help.search("your search term")
 
-Syntax :```help.search("your search term")```
-
-Example:```?rnorm  or help(rnorm)```
-
+[Ex] ?rnorm  or help(rnorm)
+```
 
 ### <a name="package"></a> Package Commands
 
 **Install a Package**
+```{r}
+[SYN] install.packages("package name")
 
-Syntax :```help.search("your search term")```
+[EX] install.packages('rnorm')
+```
 
-Example:```install.packages('rnorm')```
+**Find installed packages**
+```{r}
+   installed.packages()
+```
+
+
+### <a name="input"></a> Inspecting Variables
+
+**Find the Class of a variable**
+```{r}
+x <- 3
+class(x)
+
+```
 
 
 
-### <a name="input"></a> Input and Display Commands
 assign()
 
 Generating regular sequences
