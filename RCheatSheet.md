@@ -19,9 +19,12 @@ Example:``` ```
 
 **Find out more about a function**
 
-Syntax :```?functionName or help(functionName) ```
+```{r}
+[SYN] ?functionName or help(functionName)
 
-Example:```?rnorm or help(rnorm)```
+[EX] ?rnorm or help(rnorm)
+
+```
              
 	
 
