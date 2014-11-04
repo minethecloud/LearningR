@@ -1,7 +1,12 @@
+---
+output:
+  html_document:
+    highlight: textmate
+    number_sections: yes
+    theme: cerulean
+    toc: yes
+---
 ##R Cheat Sheet
-
-####Table Of Contents
-http://www.personality-project.org/R/r.commands.html
 
 -  [Help Commands](#help)
 -  [Package Commands](#package)
@@ -15,79 +20,65 @@ http://www.personality-project.org/R/r.commands.html
 
 ### <a name="help"></a>Help Commands 
 
-**Find out more about a function**
+***Find out more about a function***
 
-```{r,echo=FALSE}
- functionName or help(functionName)
+	 help(functionName)
+	   > ?rnorm  OR > help(rnorm)
+	
+***Learn about the different ways to use a function***
 
-?rnorm  
-help(rnorm)
+	 example(functionName)
+	   > example(rnorm) 
+	
 
-```
+***Display the arguments of a function***
 
-**Learn about the different ways to use a function**
+    args(functionName)
+`> args(rnorm)`
+	              
 
-```{r,echo=FALSE}
-example(functionName)
+***Search through R's help documentation for a specific term***
+	
+    help.search("your search term")
 
-example(rnorm) 
-```
-
-**Display the arguments of a function**
-
-```{r,echo=FALSE}
-args(functionName)
-
-args(rnorm)
-
-```              
-
-**Search through R's help documentation for a specific term**
-```{r,echo=FALSE}
-help.search("your search term")
-
-?rnorm or help(rnorm)
-```
-
+`> ?rnorm or help(rnorm)`
+	
 ### <a name="package"></a> Package Commands
 
-**Install a Package**
-```{r,echo=FALSE}
-#install.packages("package name")
+***Install a Package***
 
-#install.packages('rnorm')
-```
+	 install.packages('package name')	  
+	  > install.packages(rnorm)
+	  
 
-**Find installed packages**
-```{r}
-   installed.packages()
-```
+***Find installed packages***
+
+``` > installed.packages()```
 
 
 ### <a name="input"></a> Inspecting Variables
 
-**Find the Class of a variable**
-```{r}
-x <- 3
-class(x)
-[1] "numeric"
-```
+***Find the Class of a variable***
+	
+`> class(x)`
 
-**Checking and Changing Classes**
-```{r}
-is.character("red,yellow")
-is.logical(TRUE)
-is.numeric(3)
 
-```
+***Checking and Changing Classes***
 
-**View complete list of is functions**
-```{r}
-ls(pattern="^is",baseenv())
-```
+``` > is.character("red,yellow")```
+
+``` > is.logical(TRUE)```
+
+``` > is.numeric(3)```
+
+***View complete list of is functions***
+
+``` > ls(pattern="^is",baseenv()) ```
 
 ### <a name="moving"></a> Moving Around Commands
 ### <a name="data"></a> Data Manipulation Commands
 ###<a name="statistics"></a> Statistics and Transformations Commands
 ### <a name="graphics"></a> Graphics Commands
 
+
+http://www.personality-project.org/R/r.commands.html

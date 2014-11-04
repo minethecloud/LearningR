@@ -12,7 +12,10 @@ output:
 	-  [Lists](#lists)
 	-  [Data Frames](#frames)
 	-  [Operators](#operators)
+-  [Operations](#operations)
+	-  [Casting](#casting)
 -  [Operators](#operators)
+	-  [Colon](#colo)
 	-  [Colon](#colo)
 -  [](#input)
 -  [ ](#moving)
@@ -23,7 +26,7 @@ output:
 ### <a name="basic"></a> Basic Terminology
 
 #####[Vector](#Vector)
-	A vector is an ordered set of values.
+	A vector is an ordered set of values and is the most basic type in R.
   - **Vectorized** has several meanings in R, the most common of which is that an operator or a function will act on each element of a vector without the need for you to explicitly write a loop.
   ```c(1, 3, 6, 10, 15) + c(0, 1, 3, 6, 10)``` = ```[1]  1  4  9 16 25```
   - A second meaning of vectorization is when a function takes a vector as an input and calculates a summary statistic. ```sum(1:5)```
@@ -48,14 +51,18 @@ Data frames are matrix like structures in which the columns can be of different 
 #####Factors
 Factors provide compact ways to handle categorical data
 
+### <a name="Operations"></a> Operations
+	Sometimes we may wish to change the type of an object.This is  called casting, and most is* functions have a corresponding as* function to achieve it.
+
+
 ### <a name="operators"></a> Operators
 
 #####[Colon](#colon)
 The colon operator, :,  creates a sequence from one number to the next 
 
-example: ``` 1:5 ```
+ ``` 1:5 ```
   
 #####[c function](#cfunction)
   The c function concatenates values,
   
-  example : ```c(1,3,4,5,6)```
+ ```c(1,3,4,5,6)```
